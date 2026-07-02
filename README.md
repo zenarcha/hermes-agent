@@ -25,6 +25,11 @@
 ![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-success)
 
 ---
+> ## AI Builder Challenge Submission
+
+This repository is my submission for the Hermes AI Builder Challenge.
+
+I customized the Hermes Agent framework into **PM Copilot**, a Product Manager AI Agent that follows structured product discovery workflows before generating product artifacts such as PRDs, user stories, acceptance criteria, MVP definitions, and success metrics.
 
 ## 📖 Overview
 
