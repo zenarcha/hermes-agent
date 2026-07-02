@@ -16,6 +16,307 @@
   <a href="README.es.md"><img src="https://img.shields.io/badge/Lang-Español-orange?style=for-the-badge" alt="Español"></a>
 </p>
 
+# 🚀 Hermes PM Copilot
+
+> A Product Manager AI Agent built on top of Hermes Agent.
+
+![Built with Hermes](https://img.shields.io/badge/Built%20With-Hermes-7C3AED)
+![LLM](https://img.shields.io/badge/LLM-Gemini%202.5%20Flash-blue)
+![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-success)
+
+---
+
+## 📖 Overview
+
+Hermes PM Copilot is a specialized AI Product Manager built on top of the **Hermes Agent Framework**.
+
+Instead of behaving like a general-purpose chatbot, PM Copilot follows real Product Management workflows.
+
+Rather than immediately generating a Product Requirements Document (PRD), it first conducts structured product discovery, asks clarifying questions, understands the business context, and only then generates high-quality product artifacts.
+
+This project was created as part of the **AI Builder Challenge**.
+
+---
+
+# 🎯 Motivation
+
+Product Managers spend a significant amount of time creating:
+
+- Product Requirement Documents (PRDs)
+- User Stories
+- Acceptance Criteria
+- Success Metrics
+- MVP Definitions
+- Feature Prioritization
+- Risk Assessments
+- Product Strategy Documents
+
+While modern LLMs can generate these documents, they often:
+
+- Jump directly to solutions
+- Make assumptions
+- Skip product discovery
+- Produce inconsistent outputs
+
+PM Copilot introduces a structured Product Management workflow before producing any deliverable.
+
+---
+
+# ✨ Features
+
+Current capabilities include:
+
+- 🔍 Product Discovery
+- 📝 PRD Generation
+- 👤 User Story Generation
+- ✅ Acceptance Criteria
+- 📊 Success Metrics
+- 🛡 Guardrail Metrics
+- 🎯 MVP Definition
+- ⚠ Risk Identification
+- 🚀 Product Strategy Guidance
+
+---
+
+# 🧠 PM Discovery Workflow
+
+Instead of immediately writing documentation, PM Copilot follows a discovery-first approach.
+
+```text
+User Request
+      │
+      ▼
+Understand the Problem
+      │
+      ▼
+Identify Target Users
+      │
+      ▼
+Clarify Business Goals
+      │
+      ▼
+Gather Missing Requirements
+      │
+      ▼
+Confirm Understanding
+      │
+      ▼
+Generate Product Artifacts
+```
+
+This mirrors how experienced Product Managers work during product discovery.
+
+---
+
+# 🏗 Architecture
+
+```text
+                User
+                  │
+                  ▼
+        Hermes Agent Framework
+                  │
+                  ▼
+     PM Copilot Instructions
+          (AGENTS.md)
+                  │
+                  ▼
+        Google Gemini 2.5 Flash
+                  │
+                  ▼
+      Product Management Workflow
+                  │
+                  ▼
+      Structured Product Outputs
+```
+
+---
+
+# 🔧 Built With
+
+## Foundation
+
+- Hermes Agent Framework
+
+Hermes provides:
+
+- AI Agent Framework
+- Long-Term Memory
+- Tool Calling
+- Scheduling
+- Plugin Architecture
+- Multi-platform Support
+- CLI Experience
+- Telegram Integration
+
+---
+
+## Customization
+
+PM Copilot customizes Hermes by introducing:
+
+- Product Management persona
+- Discovery-first workflow
+- Structured PM reasoning
+- Standardized documentation generation
+
+The customization is implemented using Hermes' **AGENTS.md** system prompt mechanism without modifying the underlying framework.
+
+---
+
+# 📄 Example Workflow
+
+### User
+
+> Create a PRD for an AI Resume Tailor.
+
+### PM Copilot
+
+Instead of immediately writing the PRD, it asks:
+
+- Who are the users?
+- What problem does this solve?
+- What are the business goals?
+- What constraints exist?
+- What does success look like?
+
+After gathering sufficient context, PM Copilot generates a structured PRD.
+
+---
+
+# 📦 Generated Outputs
+
+PM Copilot can generate:
+
+- Executive Summary
+- Problem Statement
+- Goals
+- Non-goals
+- Personas
+- User Stories
+- Functional Requirements
+- Non-functional Requirements
+- Acceptance Criteria
+- Success Metrics
+- Guardrail Metrics
+- Risks
+- Assumptions
+- MVP Scope
+- Future Scope
+
+---
+
+# 🤖 Why PM Copilot?
+
+| Traditional Chatbot | Hermes PM Copilot |
+|---------------------|-------------------|
+| Responds to prompts | Conducts product discovery |
+| General-purpose | Product Management specialist |
+| Makes assumptions | Asks clarifying questions |
+| Unstructured outputs | Standardized PM artifacts |
+| Generic reasoning | Product thinking |
+
+---
+
+# 💻 Tech Stack
+
+- Hermes Agent
+- Google Gemini 2.5 Flash
+- Python
+- AGENTS.md
+- CLI
+- Telegram Support
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/hermes-pm-copilot.git
+cd hermes-pm-copilot
+```
+
+Install dependencies:
+
+```bash
+uv sync
+```
+
+Configure your preferred model:
+
+```bash
+uv run hermes setup
+```
+
+Run PM Copilot:
+
+```bash
+uv run hermes
+```
+
+---
+
+# 📸 Demo
+
+Example interaction:
+
+```text
+User:
+Create a PRD for an AI Resume Tailor.
+
+PM Copilot:
+• Who are your target users?
+• What problem are you solving?
+• What are the key features?
+• How will success be measured?
+
+...
+
+✅ Generates a complete Product Requirements Document.
+```
+
+---
+
+# 🗺 Roadmap
+
+Future enhancements include:
+
+- 📒 Notion Integration
+- 🎫 Jira Integration
+- 🐙 GitHub Integration
+- 📊 Product Analytics
+- 📈 RICE Prioritization Tool
+- 📝 Release Notes Generator
+- 🔍 Customer Feedback Analysis
+- 📅 Roadmap Generator
+- 📣 Go-To-Market Planner
+
+---
+
+# 🙏 Acknowledgements
+
+This project is built on top of the amazing **Hermes Agent Framework** developed by **Nous Research**.
+
+Hermes provides the underlying AI agent infrastructure while PM Copilot adds a specialized Product Management workflow and behavior.
+
+Original Hermes Repository:
+
+https://github.com/NousResearch/hermes-agent
+
+---
+
+# ⭐ About
+
+Hermes PM Copilot demonstrates how a general-purpose AI agent can be specialized into a domain-specific Product Manager capable of conducting structured product discovery and generating professional product documentation.
+
+Built with ❤️ using Hermes Agent.
+
+----------
+
+**HERMES FORKED**
+
 **The self-improving AI agent built by [Nous Research](https://nousresearch.com).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
 
 Use any model you want — [Nous Portal](https://portal.nousresearch.com), OpenRouter, OpenAI, your own endpoint, and [many others](https://hermes-agent.nousresearch.com/docs/integrations/providers). Switch with `hermes model` — no code changes, no lock-in.
